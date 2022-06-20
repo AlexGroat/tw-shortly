@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <script src="js/script.js" defer></script>
     <link rel="stylesheet" href="css/style.css" />
     <title>Shortly</title>
   </head>
@@ -102,7 +103,7 @@
         >
           <input
             id="link-input"
-            type="text"
+            type="url"
             class="flex-1 p-3 border-2 rounded-lg placeholder-yellow-500 focus:outline-none"
             placeholder="Shorten a link here"
           />
@@ -111,6 +112,9 @@
           >
             Shorten it
           </button>
+
+          <!-- Error Message -->
+          <div id="error" class="absolute left-7 bottom-3 text-red text-sm italic"></div>
         </form>
 
         <!-- Shortened links -->
